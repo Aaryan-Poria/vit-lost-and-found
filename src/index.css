@@ -1,35 +1,81 @@
 .app {
   display: flex;
   flex-direction: column;
-}
-.navBar {
-  display: flex;
-  border: 5px solid red;
-  width: 100%;
-  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.navBar ul {
+.heading {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.main-head {
+  font-size: 3.2rem;
+  padding-bottom: 1px;
+}
+
+.sub-head {
+  font-size: 2rem;
+  margin-top: 0px;
+  padding-top: 1px;
+  padding: 3px;
+}
+
+input,
+textarea {
+  border: 1px solid;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+  width: 30em;
+  max-width: 90%;
+  margin: 0 auto;
+}
+label,
+input,
+textarea,
+select,
+button {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+form div {
+  margin-top: 1rem;
+}
+.form-element {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+label,
+input,
+textarea button,
+select {
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+
+label {
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+input,
+textarea {
+  padding: 0.4rem;
   width: 100%;
-  list-style: none;
 }
-.nav-items {
-  display: flex;
-  flex-direction: column;
-  border: 4px solid black;
+
+button {
+  margin-top: 2rem;
 }
-.navBar a {
-  display: inline-block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
-}
-.Main {
-  display: flex;
-  border: 4px solid blue;
-}
-.card {
-  display: flex;
-  flex-direction: column;
+button:focus {
+  outline: 4px solid black;
 }
