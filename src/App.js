@@ -53,7 +53,7 @@ function LostCard() {
   return (
     <div className="card">
       <div className="cardChild">
-        <img src={piclost} alt="Lost" className="imgLost" />
+        <img src={piclost} alt="Lost images" className="imgLost" />
         <p className="paraContent">
           <b style={{ fontSize: "4rem" }}>Lost Card</b>
           <p>If you have lost something</p>
