@@ -22,8 +22,8 @@ function Main() {
 function Heading() {
   return (
     <div className="heading">
-      <h2 className="main-head">Lost Something?</h2>
-      <h3 className="sub-head">Help us to help you out!</h3>
+      <h2 className="main-head">Found Something?</h2>
+      <h3 className="sub-head">Help to get the item to rightful owner!</h3>
     </div>
   );
 }
@@ -73,21 +73,27 @@ function Form() {
         <label htmlFor="item-description">Item Description</label>
         <textarea id="item-description" name="item-description" type="text" />
       </div>
-      {}
+      <div>
+        <label htmlFor="Image">Upload item pic</label>
+        <input
+          id="image-pic"
+          name="image-pic"
+          type="file"
+          accept="image/*" //
+        />
+      </div>
       <div className="form-element">
-        <label htmlFor="date">Date Lost</label>
+        <label htmlFor="date">Date Found</label>
         <input id="date" name="date" type="date" />
       </div>
       <div>
-        <label htmlFor="numOfBlocks">Render Component X Number of Times</label>
-        <input
-          type="number"
-          placeholder="Enter number of times"
-          id="numOfBlocks"
-          onChange={handleInputChange}
-        />
+        <label htmlFor="found-at">Found at</label>
+        <select>
+          <option>Select where you found it </option>
+          <option>Academic block</option>
+          <option>At any route</option>
+        </select>
       </div>
-      {formsubmitted && renderComponentXTimes()}
       <div className="sub">
         <button type="submit">Submit</button>
       </div>
