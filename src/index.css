@@ -1,35 +1,99 @@
-.app {
-  display: flex;
-  flex-direction: column;
-}
-.navBar {
-  display: flex;
-  border: 5px solid red;
-  width: 100%;
-  justify-content: center;
+:root {
+  background-image: linear-gradient(to bottom right, red, blue);
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.navBar ul {
-  display: flex;
-  width: 100%;
-  list-style: none;
+header {
+  height: 10vh;
+  margin-top: 1%;
 }
-.nav-items {
-  display: flex;
-  flex-direction: column;
-  border: 4px solid black;
-}
-.navBar a {
-  display: inline-block;
-  padding: 10px 15px;
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 30px;
   text-decoration: none;
-  color: black;
+  font-size: 1.5rem;
+  padding-left: 2%;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  height: 100%;
+}
+
+.SignIn {
+  padding-right: 1.5%;
+  white-space: nowrap;
+  width: 100px;
+}
+
+.navMenu {
+  float: left;
+  border-right: 2px solid #bbb;
+}
+.lostFound {
+  float: left;
+  font-size: 1.7rem;
+  color: yellow;
+  padding: 40px 20px;
+}
+
+a:hover {
+  background-color: green;
+  translate: 0.2rem 0.2rem;
+}
+
 .Main {
   display: flex;
-  border: 4px solid blue;
+  width: 100%;
+  justify-content: space-around;
+  margin: 0;
+  height: ;
 }
+
 .card {
-  display: flex;
-  flex-direction: column;
+  margin: 1%;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.imgLost {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem red;
+}
+
+.imgFound {
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem green;
+}
+
+.paraContent {
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 2rem;
+}
+.cardChild:hover {
+  translate: 1rem -2rem;
+}
+
+.cardChild:active {
+  translate: 0rem 0rem;
 }
