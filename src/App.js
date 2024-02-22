@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavBar />;
+      <Main />
     </div>
   );
 }
 
-export default App;
+function NavBar() {
+  return (
+    <div className="navBar">
+      <div className="nav-items">
+        <ul>
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function Main() {
+  return (
+    <div className="Main">
+      <LostCard />
+      <FoundCard />
+    </div>
+  );
+}
+
+function LostCard() {
+  return (
+    <div className="card">
+      <p>LostCard</p>
+    </div>
+  );
+}
+
+function FoundCard() {
+  return (
+    <div className="card">
+      <p>FoundCard</p>
+    </div>
+  );
+}
